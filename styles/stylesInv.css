@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 320px) {
+
+
+body{
+    font-family:'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+.padreGridIndex{
+    display: grid;
+    grid-template-areas:    "hijoHeader"
+                            "hijoMain"
+                            "hijoContent"
+                            "hijoFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 250px 300px 80px;
+}
+
+.hijoHeader{
+    grid-area: hijoHeader;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;           
+}
+
+.logo {
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;  
+    margin-top: 10px; 
+    margin-left: 5px;
+}
+
+.navegacion{
+    display: flex;
+    color: #F2F2F2;
+    background-color: #d0cac9;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-right: 40px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.navegacion li a{
+    color: #060101;
+    font-size: 12px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.navegacion li a:hover {
+    color: rgb(245, 245, 108);
+    
+}
+
+.hijoMain{
+    grid-area: hijoMain;
+    display: flex;
+    background-image: url(https://img.freepik.com/free-photo/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1418-474.jpg?w=826&t=st=1660349519~exp=1660350119~hmac=68f9468016f7d634ff0e73d7a0d3b6664871c0e9271a4d0d717f9f582754468a);
+    background-size: cover;
+    align-items: center;
+
+}
+
+.tituloImagen{
+    font-size: 20px;
+    text-align: center;
+}
+
+.tituloImagen:hover{
+    background-color: #F2F2F2;
+}
+
+.tituloImagen a{
+    text-decoration: none;
+    color:#F2F2F2;
+    text-shadow: #060101 1px 1px;
+}
+
+.tituloImagen a:hover{
+    color: rgb(13, 13, 248);
+}
+
+.hijoContent{
+    grid-area: hijoContent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloDesc{
+    font-size: 18px;
+    text-align: center;
+    border: #262626 solid 2px;
+    background-color: #545252;
+    color: rgb(245, 245, 108); 
+    width: 100%;
+}
+
+
+.contDesc{
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.hijoFooter{
+    display: flex;
+    grid-area: hijoFooter;
+    background-color: #262626;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.hijoFooter a{
+    text-decoration: none;
+}
+
+
+.infoFooter li{
+    font-size: 20px;
+    text-align: center;
+    color: #F2F2F2;
+    border: rgb(245, 245, 108) solid 2px;
+    padding: 6px;
+    text-decoration: none;  
+}
+
+.infoFooter li:hover{
+    color: rgb(245, 245, 108);
+}
+.hijoContent2{
+    display: none;
+}
+
+}
+
+
+
+
+/* For Tablets: */
+
+@media only screen and (min-width: 768px) {
+
+
+.padreGridIndex{
+    display: grid;
+    grid-template-areas:    "hijoHeader"
+                            "hijoMain"
+                            "hijoContent"
+                            "hijoFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 400px 430px 80px;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+    margin-top: 15px; 
+    margin-left: 10px;
+}
+
+.navegacion{
+    padding-right: 50px;
+    margin-top: 15px;
+    height: 33px;
+    align-items: center;
+}
+
+.navegacion li a{
+    font-size: 20px;
+} 
+
+.hijoMain{
+    justify-content: center;
+}
+
+.tituloImagen{
+    font-size: 25px;
+}
+
+.tituloDesc{
+    font-size: 20px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.contDesc{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+
+}
+
+.hijoContent2{
+    display: none;
+}
+
+
+}
+
+
+
+
+/* For Desktops: */
+
+@media only screen and (min-width: 1200px) {
+
+
+.padreGridIndex{
+    display: grid;
+    grid-template-areas:    "hijoHeader hijoHeader"
+                            "hijoMain hijoContent"
+                            "hijoContent2 hijoContent2"
+                            "hijoFooter hijoFooter";
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 180px 500px 400px 80px;
+    gap: 10px;
+}
+    
+.logo {
+    height: 100px;
+    width: 200px;
+    margin-top: 15px; 
+}
+    
+.navegacion{
+    padding-right: 50px;
+    margin-top: 15px;
+    height: 33px;
+    align-items: center;
+}
+    
+.navegacion li a{
+    font-size: 20px;
+} 
+    
+.hijoMain{
+    justify-content: center;
+}
+    
+.tituloImagen{
+    font-size: 25px;
+} 
+
+    
+.tituloDesc{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+    
+}
+    
+.contDesc{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.hijoContent{
+    margin-top: 60px;
+    
+}
+    
+.hijoContent2{
+    grid-area: hijoContent2;
+    display: flex;
+    background-image: url(https://img.freepik.com/free-photo/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1418-712.jpg?w=740&t=st=1660269790~exp=1660270390~hmac=c98d72165e753ac9557f170ab3eed3f474544132706d061e46e8dd92afcb3c42);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hijoContent2 a{
+    text-decoration: none;
+}
+
+.hijoContent2 a .obras:hover{
+    color: rgb(13, 13, 248);
+}
+
+
+.obras{
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(1, 1, 4);
+}
+
+}
