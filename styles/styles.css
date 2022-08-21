@@ -279,7 +279,7 @@ body{
                             "hijoMain hijoContent"
                             "hijoContent2 hijoContent2"
                             "hijoFooter hijoFooter";
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 180px 500px 400px 80px;
     gap: 10px;
 }
