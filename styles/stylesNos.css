@@ -1,80 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-
-/* For mobile phones: */
-
-@media only screen and (min-width: 320px) {
-
-
-body{
+ody{
     font-family:'Montserrat', sans-serif;
-    justify-content: center;
-}
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 250px 380px 80px;
-}
-
-.hijoHeader{
-    grid-area: hijoHeader;
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;           
 }
 
 .logo {
     height: 60px;
     width: 120px;
     border-radius: 5px;  
-    margin-top: 10px; 
-    margin-left: 5px;
-    transition: width 0.5s;
-   
 }
 
-.logo:hover{
-    width: 220px;
-}
-
-.navegacion{
-    display: flex;
-    color: #F2F2F2;
-    background-color: #d0cac9;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-right: 40px;
-    margin-top: 5px;
-    align-items: center;
-}
-
-.navegacion li a{
-    color: #060101;
-    font-size: 12px;
-    font-weight: 900;
-    text-decoration: none;
-}
-
-.navegacion li a:hover {
-    color: rgb(245, 245, 108);
-    border-radius: 10px;
-    padding: 1px;
-    background-color: #060101;    
-}
 
 .hijoMain{
-    grid-area: hijoMain;
     display: flex;
-    background-image: url(https://img.freepik.com/free-photo/low-angle-shot-high-rise-buildings-clear-sky-frankfurt-germany_181624-30909.jpg?w=996&t=st=1660360076~exp=1660360676~hmac=4ce7cff5895f6d8ff6259faa96ff14aa14783a535cfbc166aeac7d117d536a14);
+    background-image: url(https://img.freepik.com/free-photo/precision-factory-iron-parts-teamwork_1112-1055.jpg?w=740&t=st=1661317482~exp=1661318082~hmac=0a7a9042ce67469e17d5c147172a063a6f0c1cd09c4a228238f48d37880efeab);
     background-size:cover;
     align-items: center;
     justify-content: center;
-
+    background-repeat: no-repeat;
+    height: 16rem;
+    margin-bottom: 2rem;
 
 
 }
@@ -82,20 +27,18 @@ body{
 .tituloImagen{
     color: #F2F2F2;
     text-shadow: #060101 1px 1px;
-    font-size: 20px;
 }
 
 .hijoContent{
-    grid-area: hijoContent;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgb(177, 175, 212), rgb(241, 239, 234), rgb(177, 175, 212));
+    background-image: linear-gradient(rgb(156, 175, 47), rgb(184, 187, 17), rgb(221, 244, 9));
 }
 
 
 .contDesc{
-    font-size: 15px;
+    font-size: 18px;
     justify-content: center;
     text-align: center;
     
@@ -111,6 +54,9 @@ body{
     align-items: center;
     justify-content: space-around;
     list-style: none;
+    height: 6rem;
+    margin-top: 2rem;
+
 }
 
 .hijoFooter a{
@@ -142,112 +88,3 @@ body{
     color: rgb(245, 245, 108);
 }
 
-
-}
-
-
-
-
-/* For Tablets: */
-
-@media only screen and (min-width: 768px) {
-
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px 400px 430px 80px;
-}
-
-.logo {
-    height: 100px;
-    width: 200px;
-    margin-top: 15px; 
-    margin-left: 10px;
-}
-
-.navegacion{
-    padding-right: 50px;
-    margin-top: 15px;
-    height: 33px;
-    align-items: center;
-}
-
-.navegacion li a{
-    font-size: 20px;
-} 
-
-
-.tituloImagen{
-    font-size: 25px;
-}
-
-.contDesc{
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
-    padding-left: 20px;
-
-}
-
-
-
-}
-
-
-
-
-/* For Desktops: */
-
-@media only screen and (min-width: 1200px) {
-
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px 500px 300px 80px;
-    gap: 10px;
-}
-    
-.logo {
-    height: 100px;
-    width: 200px;
-    margin-top: 15px; 
-}
-    
-.navegacion{
-    padding-right: 50px;
-    margin-top: 15px;
-    height: 33px;
-    align-items: center;
-}
-    
-.navegacion li a{
-    font-size: 20px;
-} 
-    
-    
-
-.tituloImagen{
-    font-size: 30px;
-}
-
-    
-.contDesc{
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-}
-
-    
-
-
-}

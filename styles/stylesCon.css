@@ -1,117 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-
-/* For mobile phones: */
-
-@media only screen and (min-width: 320px) {
-
-
-body{
+ody{
     font-family:'Montserrat', sans-serif;
-    justify-content: center;
 }
 
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 250px 300px 80px;
-}
-
-.hijoHeader{
-    grid-area: hijoHeader;
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;           
-}
 
 .logo {
     height: 60px;
     width: 120px;
-    border-radius: 5px;  
-    margin-top: 10px; 
-    margin-left: 5px;
-    transition: width 0.5s;
-   
-}
-
-.logo:hover{
-    width: 220px;
-}
-
-.navegacion{
-    display: flex;
-    color: #F2F2F2;
-    background-color: #d0cac9;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-right: 40px;
-    margin-top: 5px;
-    align-items: center;
-}
-
-.navegacion li a{
-    color: #060101;
-    font-size: 12px;
-    font-weight: 900;
-    text-decoration: none;
-}
-
-.navegacion li a:hover {
-    color: rgb(245, 245, 108);
-    border-radius: 10px;
-    padding: 1px;
-    background-color: #060101;    
+    border-radius: 5px;     
 }
 
 .hijoMain{
-    grid-area: hijoMain;
     display: flex;
-    background-image: url(https://img.freepik.com/free-photo/portrait-woman-customer-service-worker_144627-37943.jpg?w=996&t=st=1660360146~exp=1660360746~hmac=5a39760219027fffd02fad449ecd1eacba7fc6bd951fcceb3770294f97e20d1b);
-    background-size:cover;
-    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15768.jpg?w=740&t=st=1661317370~exp=1661317970~hmac=0327cb5bb0995b730f6720fcabbf6327c58ae1d21121da91884bacf2bf50a76f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16rem;
+    margin-bottom: 2rem;
     justify-content: center;
 
 
 }
 
-.tituloImagen h2 {
-    font-size: 20px;
+
+
+.tituloImagen{
+    font-size: 2rem;
     text-align: center;
-    color: #F2F2F2;
-    text-shadow: #060101 2px 2px;
-    margin-top: 100px;
-
-}
-
-.hijoContent{
-    grid-area: hijoContent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #f2f2f2;
+    background-color: #545252;
+    text-decoration: none;
 }
 
 
-
-#form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 5px;
+.tituloImagen:hover{
+    background-color: #F2F2F2;
+    color: #545252;
 }
 
-.submit {
-    background-color:rgb(245, 245, 108);
-    height: 30px;
-    width: 150px;
-}
 
-.campo {
-    height: 30px;
-}
 
 
 .hijoFooter{
@@ -138,118 +66,3 @@ body{
 }
 
 
-
-}
-
-
-
-
-/* For Tablets: */
-
-@media only screen and (min-width: 768px) {
-
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px 400px 380px 80px;
-}
-
-.logo {
-    height: 100px;
-    width: 200px;
-    margin-top: 15px; 
-    margin-left: 10px;
-}
-
-.navegacion{
-    padding-right: 50px;
-    margin-top: 15px;
-    height: 33px;
-    align-items: center;
-}
-
-.navegacion li a{
-    font-size: 20px;
-} 
-
-
-.tituloImagen h2 {
-    font-size: 25px;
-    margin-top: 100px;
-
-}
-
-
-
-#form{
-    width: 75%;
-    gap: 10px;
-}
-
-.submit {
-    background-color:rgb(245, 245, 108);
-    height: 40px;
-    width: 170px;
-}
-
-.campo {
-    height: 30px;
-}
-
-}
-
-
-
-
-/* For Desktops: */
-
-@media only screen and (min-width: 1200px) {
-
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px 500px 300px 80px;
-    gap: 10px;
-}
-    
-.logo {
-    height: 100px;
-    width: 200px;
-    margin-top: 15px; 
-}
-    
-.navegacion{
-    padding-right: 50px;
-    margin-top: 15px;
-    height: 33px;
-    align-items: center;
-}
-    
-.navegacion li a{
-    font-size: 20px;
-} 
-    
-.tituloImagen h2 {
-    font-size: 30px;
-    margin-top: 130px;
-
-}
-
-
-#form{
-    width: 50%;
-    gap: 10px;
-}    
-
-
-}

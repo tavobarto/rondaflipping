@@ -1,138 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 
-/* For mobile phones: */
-
-@media only screen and (min-width: 320px) {
-
-
 body{
     font-family:'Montserrat', sans-serif;
-    justify-content: center;
 }
 
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 250px 270px 80px;
-}
-
-.hijoHeader{
-    grid-area: hijoHeader;
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;           
-}
 
 .logo {
     height: 60px;
     width: 120px;
-    border-radius: 5px;  
-    margin-top: 10px; 
-    margin-left: 5px; 
-    transition: width 0.5s;
-   
+    border-radius: 5px;     
 }
 
-.logo:hover{
-    width: 220px;
-}
-
-.navegacion{
-    display: flex;
-    color: #F2F2F2;
-    background-color: #d0cac9;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-right: 40px;
-    margin-top: 5px;
-    align-items: center;
-}
-
-.navegacion li a{
-    color: #060101;
-    font-size: 12px;
-    font-weight: 900;
+.tituloImagen{
+    font-size: 2rem;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #545252;
     text-decoration: none;
 }
 
-.navegacion li a:hover {
-    color: rgb(245, 245, 108);
-    border-radius: 10px;
-    padding: 1px;
-    background-color: #060101;    
-}
-
-.hijoMain{
-    grid-area: hijoMain;
-    display: flex;
-    background-image: url(https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?w=1380&t=st=1660349590~exp=1660350190~hmac=9a5f7bbc1b6f208b90fc0f57d42caee35f85a857bae86e558534c43259b2f3a7);
-    background-size: cover;
-    align-items: center;
-    animation-name: imagenMain;
-    animation-duration: 8s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes imagenMain{
-    0% {background-image: url(https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?w=1380&t=st=1660349590~exp=1660350190~hmac=9a5f7bbc1b6f208b90fc0f57d42caee35f85a857bae86e558534c43259b2f3a7)}
-    100% {background-image: url(https://img.freepik.com/free-photo/female-realtor-showing-young-couple-new-house_23-2148895441.jpg?w=740&t=st=1661047310~exp=1661047910~hmac=4c76bf34291add43ffeaf389996c6d540930bf55751138f3a044f39946ef0caa)}
-}
-
-
-
-.tituloImagen{
-    font-size: 20px;
-    text-align: center;
-    animation-name: animacionTitulo;
-    animation-duration: 8s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes animacionTitulo{
-    0% {opacity: 0.2;}
-    50% {opacity: 0.6;}
-    100% {opacity: 1;}
-}
 
 .tituloImagen:hover{
     background-color: #F2F2F2;
+    color: #545252;
 }
 
-.tituloImagen a{
-    text-decoration: none;
-    color:#F2F2F2;
-    text-shadow: #060101 1px 1px;
-}
 
-.tituloImagen a:hover{
-    color: rgb(13, 13, 248);
+.carousel-item{
+    height: 25rem;
+    font-size: 30px;
 }
 
 
 .hijoContent{
-    grid-area: hijoContent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 4rem;
 }
 
 .tituloDesc{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     border: #262626 solid 2px;
     background-color: #545252;
     color: rgb(245, 245, 108);
-    width: 300px;
     align-items: center;
     transition: 1.5s;
 }
@@ -146,7 +60,7 @@ body{
 
 
 .contDesc{
-    font-size: 15px;
+    font-size: 18px;
     justify-content: center;
     text-align: center;
 
@@ -161,6 +75,9 @@ body{
     align-items: center;
     justify-content: space-around;
     list-style: none;
+    height: 5rem;
+    margin-top: 3rem;
+
 }
 
 .hijoFooter a{
@@ -191,166 +108,7 @@ body{
     color: rgb(245, 245, 108);
     
 }
-.hijoContent2{
-    display: none;
-}
-
-}
 
 
 
 
-/* For Tablets: */
-
-@media only screen and (min-width: 768px) {
-
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader"
-                            "hijoMain"
-                            "hijoContent"
-                            "hijoFooter";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px 400px 430px 80px;
-}
-
-.logo {
-    height: 100px;
-    width: 200px;
-    margin-top: 15px; 
-    margin-left: 10px;
-}
-
-.navegacion{
-    padding-right: 50px;
-    margin-top: 15px;
-    height: 33px;
-    align-items: center;
-}
-
-.navegacion li a{
-    font-size: 20px;
-} 
-
-.hijoMain{
-    justify-content: center;
-}
-
-.tituloImagen{
-    font-size: 25px;
-}
-
-.tituloDesc{
-    font-size: 20px;
-    width: 600px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    justify-items: center;
-
-}
-
-.contDesc{
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
-    padding-left: 20px;
-
-}
-
-.hijoContent2{
-    display: none;
-}
-
-
-}
-
-
-
-
-/* For Desktops: */
-
-@media only screen and (min-width: 1200px) {
-
-
-.padreGridIndex{
-    display: grid;
-    grid-template-areas:    "hijoHeader hijoHeader"
-                            "hijoMain hijoContent"
-                            "hijoContent2 hijoContent2"
-                            "hijoFooter hijoFooter";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 180px 500px 400px 80px;
-    gap: 10px;
-}
-    
-.logo {
-    height: 100px;
-    width: 200px;
-    margin-top: 15px; 
-}
-    
-.navegacion{
-    padding-right: 50px;
-    margin-top: 15px;
-    height: 33px;
-    align-items: center;
-}
-    
-.navegacion li a{
-    font-size: 20px;
-} 
-    
-.hijoMain{
-    justify-content: center;
-}
-    
-.tituloImagen{
-    font-size: 25px;
-} 
-
-    
-.tituloDesc{
-    font-size: 20px;
-    text-align: center;
-    padding-top: 17px;
-    
-}
-    
-.contDesc{
-    display: flex;
-    font-size: 20px;
-}
-
-.hijoContent{
-    margin-top: 60px;
-    
-}
-    
-.hijoContent2{
-    grid-area: hijoContent2;
-    display: flex;
-    background-image: url(https://img.freepik.com/free-photo/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1418-712.jpg?w=740&t=st=1660269790~exp=1660270390~hmac=c98d72165e753ac9557f170ab3eed3f474544132706d061e46e8dd92afcb3c42);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.hijoContent2 a{
-    text-decoration: none;
-}
-
-.hijoContent2 a .obras:hover{
-    color: rgb(13, 13, 248);
-}
-
-
-.obras{
-    font-size: 60px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(1, 1, 4);
-}
-
-}
