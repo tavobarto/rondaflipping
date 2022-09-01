@@ -1,0 +1,30 @@
+//index
+.hijoContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.tituloDesc{
+    font-size: $size-titulo;
+    text-align: center;
+    border: $borde-titulos;
+    background-color: $gris-primario;
+    color: $amarillo-primario;
+    align-items: center;
+    transition: 1.5s;
+
+    &:hover{
+    font-size: $size-titulo;
+    background-color: $gris-primario;
+    color: $azul-primario
+}
+}
+
+.contDesc{
+    font-size: $size-desc;
+    justify-content: center;
+    text-align: center;
+}

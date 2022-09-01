@@ -1,0 +1,39 @@
+
+.hijoFooter{
+    display: $display-footer;
+    background-color: $back-color-footer;
+    align-items: $align-footer;
+    justify-content: $justify-footer;
+    list-style: $list-style-footer;
+    height: $footer-h;
+    margin-top: $margin-footer;
+}
+
+.infoFooter{ 
+    text-decoration: $text-decor-footer;
+
+    li{
+    font-size: $font-size-footer;
+    text-align: $text-align-footer;
+    color: $blanco-primario;
+    background-color: $back-color-footer;
+    border: $border-footer;
+    padding: $padding-footer;
+    animation-name: botonFooter;
+    animation-duration: $a-duration-footer;
+    animation-delay: $a-delay-footer; 
+    animation-iteration-count: $a-itin-footer; 
+}
+
+    &:hover{
+        color: $amarillo-primario;   
+    }
+}
+
+@keyframes botonFooter{
+    0% {background-color: $back-color-footer;}
+    100% {background-color: $azul-primario;}
+}
+
+
+
