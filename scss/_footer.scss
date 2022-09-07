@@ -15,7 +15,7 @@
     li{
     font-size: $font-size-footer;
     text-align: $text-align-footer;
-    color: $blanco-primario;
+    color: rgb(3, 2, 2);
     background-color: $back-color-footer;
     border: $border-footer;
     padding: $padding-footer;
@@ -32,7 +32,7 @@
 
 @keyframes botonFooter{
     0% {background-color: $back-color-footer;}
-    100% {background-color: $azul-primario;}
+    100% {background-color: $negro-primario;}
 }
 
 

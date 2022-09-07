@@ -2,11 +2,12 @@
 //primarios
 $blanco-primario: #F2F2F2;
 $gris-primario: #545252;
-$azul-primario: rgb(13, 13, 248);
+$negro-primario: rgb(4, 4, 3);
 $amarillo-primario: rgb(245, 245, 108);
 
-//titulos main "index" e "inversores"
-$borde-titulos: #262626 solid 2px;
+//gradientes
+$gradiente: linear-gradient(rgb(245, 245, 108), rgb(219, 219, 86), rgb(168, 168, 66));
+
 
 //footer
 $back-color-footer: #262626;
