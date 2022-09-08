@@ -1,39 +1,45 @@
 
 .hijoFooter{
+    @include centrado;
     display: $display-footer;
     background-color: $back-color-footer;
-    align-items: $align-footer;
-    justify-content: $justify-footer;
     list-style: $list-style-footer;
     height: $footer-h;
-    margin-top: $margin-footer;
 }
 
 .infoFooter{ 
     text-decoration: $text-decor-footer;
 
     li{
+    @include centrado;
     font-size: $font-size-footer;
-    text-align: $text-align-footer;
     color: rgb(3, 2, 2);
     background-color: $back-color-footer;
     border: $border-footer;
     padding: $padding-footer;
     animation-name: botonFooter;
-    animation-duration: $a-duration-footer;
-    animation-delay: $a-delay-footer; 
-    animation-iteration-count: $a-itin-footer; 
+    animation-duration: 2s;
+    animation-delay: 1s; 
+    animation-iteration-count: infinite; 
 }
 
-    &:hover{
-        color: $amarillo-primario;   
-    }
 }
 
 @keyframes botonFooter{
-    0% {background-color: $back-color-footer;}
-    100% {background-color: $negro-primario;}
+    0% {background-color: $blanco-primario;}
+    100% {background-color: $amarillo-primario;}
+
 }
+
+#footerID{
+    background-color: $back-color-footer;
+    padding: $padding-footer;
+    color: $blanco-primario;
+    margin-top: 60px;
+
+
+}
+
 
 
 

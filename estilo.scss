@@ -2,7 +2,6 @@
 @import "./scss/variables/colores";
 @import "./scss/variables/medidas";
 @import "./scss/variables/aligns";
-@import "./scss/variables/animations";
 @import "./node_modules/animate.css/animate.css";
 
 //partials
@@ -10,5 +9,6 @@
 @import "./scss/footer";
 @import "./scss/header";
 @import "./scss/main";
+@import "./scss/mixins.scss";
 
 

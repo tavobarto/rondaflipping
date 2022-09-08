@@ -1,4 +1,87 @@
 @import "./node_modules/animate.css/animate.css";
+.contDesc {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+
+#arrowAnim {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 3vw;
+  height: 3vw;
+  border: 2.5vw solid;
+  border-color: black transparent transparent black;
+  transform: rotate;
+}
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(20vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(35vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(50vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(65vw);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(20vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(35vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(50vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(65vw);
+  }
+}
+.tituloImagen {
+  color: black;
+}
+
 .hijoFooter {
   display: flex;
   background-color: #262626;
@@ -6,7 +89,6 @@
   justify-content: space-around;
   list-style: none;
   height: 5rem;
-  margin-top: 3rem;
 }
 
 .infoFooter {
@@ -28,27 +110,31 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.infoFooter:hover {
-  color: rgb(245, 245, 108);
-}
 
 @-webkit-keyframes botonFooter {
   0% {
-    background-color: #262626;
+    background-color: #F2F2F2;
   }
   100% {
-    background-color: rgb(4, 4, 3);
+    background-color: rgb(245, 245, 108);
   }
 }
 
 @keyframes botonFooter {
   0% {
-    background-color: #262626;
+    background-color: #F2F2F2;
   }
   100% {
-    background-color: rgb(4, 4, 3);
+    background-color: rgb(245, 245, 108);
   }
 }
+#footerID {
+  background-color: #262626;
+  padding: 6px;
+  color: #F2F2F2;
+  margin-top: 60px;
+}
+
 .logo {
   height: 60px;
   width: 120px;
@@ -70,7 +156,9 @@
 .card-index:hover {
   background-color: rgb(245, 245, 108);
 }
-
-.gradiente {
-  background-image: linear-gradient(rgb(245, 245, 108), rgb(219, 219, 86), rgb(168, 168, 66));
+.card-index .contDesc {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
 }/*# sourceMappingURL=estilo.css.map */
