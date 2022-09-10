@@ -1,16 +1,16 @@
 @import "./node_modules/animate.css/animate.css";
-.contDesc {
-  font-size: 18px;
-  justify-content: center;
+.textMain, .card-inversores, .card-index {
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 #arrowAnim {
   width: 10vw;
   height: 10vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .arrow {
@@ -82,57 +82,16 @@
   color: black;
 }
 
-.hijoFooter {
-  display: flex;
-  background-color: #262626;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  height: 5rem;
-}
-
-.infoFooter {
-  text-decoration: none;
-}
-.infoFooter li {
-  font-size: 20px;
-  text-align: center;
-  color: rgb(3, 2, 2);
-  background-color: #262626;
-  border: rgb(245, 245, 108) solid 2px;
-  padding: 6px;
-  -webkit-animation-name: botonFooter;
-          animation-name: botonFooter;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes botonFooter {
-  0% {
-    background-color: #F2F2F2;
-  }
-  100% {
-    background-color: rgb(245, 245, 108);
-  }
-}
-
-@keyframes botonFooter {
-  0% {
-    background-color: #F2F2F2;
-  }
-  100% {
-    background-color: rgb(245, 245, 108);
-  }
-}
 #footerID {
   background-color: #262626;
   padding: 6px;
-  color: #F2F2F2;
-  margin-top: 60px;
+  color: #f2f2f2;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.footerData {
+  font-size: 15px;
 }
 
 .logo {
@@ -142,23 +101,22 @@
 }
 
 .card-index {
-  height: 10rem;
   display: flex;
-  align-items: center;
-  justify-items: center;
+  height: 9rem;
   border: black 2px solid;
   border-radius: 4px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
-.card-index:a {
-  text-decoration: none;
+
+.card-inversores {
+  display: flex;
+  height: 12rem;
+  border: black 2px solid;
+  border-radius: 4px;
+  background-color: #f2f2f2;
 }
-.card-index:hover {
-  background-color: rgb(245, 245, 108);
-}
-.card-index .contDesc {
+
+.textMain {
   font-size: 18px;
-  justify-content: center;
-  text-align: center;
   padding: 15px;
 }/*# sourceMappingURL=estilo.css.map */

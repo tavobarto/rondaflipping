@@ -1,34 +1,23 @@
 //index
 
-.card-index {
-    @include centrado;
-    height: 10rem;
-    display: flex;
-    border: black 2px solid;
-    border-radius: 4px;
-    background-color: $blanco-primario;
-
-    &:a{
-    text-decoration: none;
-    }
-    
-    &:hover{
-        background-color: $amarillo-primario;
-        
-
-    }
-
-
-//nosotros
-
-.contDesc{
-    @include centrado;
-    font-size: 18px;
-    padding: 15px;
-    
+.card-index{
+    @extend %centrado;
+    @include cards (9rem);
 }
 
+.card-inversores{
+    @extend %centrado;
+    @include cards (12rem);
 }
+
+
+.textMain{
+@extend %centrado;
+font-size: 18px;
+padding: 15px;
+}
+
+
 
 
 
