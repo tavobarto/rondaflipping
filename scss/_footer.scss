@@ -12,6 +12,12 @@
     font-size: 20px;
 }
 
+.footerLinks{
+    @extend %linksFooter;
+    @extend %centrado;
+    
+}
+
 
 
 

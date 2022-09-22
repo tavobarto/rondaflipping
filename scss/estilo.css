@@ -1,10 +1,16 @@
-@import "./node_modules/animate.css/animate.css";
-.textMain, .card-inversores, .card-index {
+@import "../node_modules/animate.css/animate.css";
+.textMain, .card-inversores, .card-index, .footerLinks {
   text-align: center;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
+}
+
+.footerLinks {
+  text-decoration: none;
+  justify-content: space-between;
+  padding-left: 1rem;
 }
 
 #arrowAnim {
