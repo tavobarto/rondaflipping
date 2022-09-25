@@ -106,6 +106,18 @@
   border-radius: 5px;
 }
 
+header {
+  background-color: aqua;
+}
+
+.container-fluid {
+  padding-right: 0px;
+}
+
+.row {
+  margin-right: 0px;
+}
+
 .card-index {
   display: flex;
   height: 9rem;
