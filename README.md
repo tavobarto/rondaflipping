@@ -5,7 +5,7 @@ Comenzando 🚀
 Se recomienda la descarga de VSC para su correcta visualizacion.
 
 Construido con 🛠️
-Framework de Bootstrap, Sass y box-modeling
+Framework de Bootstrap, (Css + Sass) y box-modeling
 
 Autor ✒️
 Gustavo Bartolomei
